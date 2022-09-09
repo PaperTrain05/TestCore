@@ -1,0 +1,16 @@
+name: TestCore
+version: '${project.version}'
+main: io.paper.testcore.Main
+commands:
+  gmc:
+    description: gmc
+  gms:
+    description: gms
+  kit:
+    description: give kit
+  god:
+    descriptio: you are god
+  gapple:
+    description: gapple
+  verbose:
+    description: verbose ac
