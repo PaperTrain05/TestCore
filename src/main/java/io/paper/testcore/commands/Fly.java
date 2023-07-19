@@ -11,7 +11,7 @@ public class Fly implements CommandExecutor {
         if(sender instanceof Player){
             Player p = (Player)sender;
             p.setAllowFlight(true);
-            p.setFlySpeed(1);
+            p.setFlySpeed(1F);
             p.sendMessage("§eFly attivata");
         }
         return false;

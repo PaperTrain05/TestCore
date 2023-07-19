@@ -4,21 +4,21 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class KitOP implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player){
             Player p = (Player)sender;
-            ItemStack gapple = new ItemStack(Material.GOLDEN_APPLE, 64);
-            ItemStack testa = new ItemStack(Material.DIAMOND_HELMET, 1);
-            ItemStack petto = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
-            ItemStack pantaloni = new ItemStack(Material.DIAMOND_LEGGINGS, 1);
-            ItemStack scarpe = new ItemStack(Material.DIAMOND_BOOTS, 1);
+            ItemStack spada = new ItemStack(Material.DIAMOND_SWORD, 1);
+            ItemStack canna = new ItemStack(Material.FISHING_ROD, 1);
+            ItemStack blocchi = new ItemStack(Material.STAINED_CLAY, 64);
 
-            p.getInventory().addItem(gapple, testa, petto, pantaloni, scarpe);
+            p.getInventory().addItem(spada, canna, blocchi);
         }
         return false;
     }

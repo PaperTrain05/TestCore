@@ -8,9 +8,9 @@ commands:
     description: gms
   kit:
     description: give kit
-  god:
-    descriptio: you are god
   gapple:
     description: gapple
-  verbose:
-    description: verbose ac
+  blocchi:
+    description: blocchi
+  setspawn:
+    description: setspawn

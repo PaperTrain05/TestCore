@@ -1,4 +1,4 @@
-package io.paper.testcore;
+package io.paper.testcore.listeners;
 
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Arrow;
