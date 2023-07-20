@@ -3,6 +3,7 @@ package io.paper.testcore;
 import io.paper.testcore.commands.*;
 import io.paper.testcore.listeners.PunchSystem;
 import io.paper.testcore.listeners.RemoveArrowSystem;
+import io.paper.testcore.listeners.SpawnJoin;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -37,11 +38,13 @@ public final class Main extends JavaPlugin {
         getCommand("gapple").setExecutor(new Gapple());
         getCommand("blocchi").setExecutor(new Blocchi());
         getCommand("setspawn").setExecutor(new SetSpawn());
+        getCommand("spawn").setExecutor(new Spawn());
     }
 
     public void Events(){
         Bukkit.getServer().getPluginManager().registerEvents(new PunchSystem(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new RemoveArrowSystem(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new SpawnJoin(), this);
     }
     public void Logger(){
         Bukkit.getLogger().info("---------------------------------------------------------------");

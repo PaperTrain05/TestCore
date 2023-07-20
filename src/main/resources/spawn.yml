@@ -1,7 +1,7 @@
 spawn-location:
-world:
-x:
-y:
-z:
-yaw:
-pitch:
+  world:
+  x:
+  y:
+  z:
+  yaw:
+  pitch:

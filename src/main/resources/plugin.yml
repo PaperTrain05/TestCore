@@ -14,3 +14,5 @@ commands:
     description: blocchi
   setspawn:
     description: setspawn
+  spawn:
+    description: spawn command
